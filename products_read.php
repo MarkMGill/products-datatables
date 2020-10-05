@@ -40,6 +40,7 @@
                                     <input type="text" name="createPrice" id="createPrice" class="form-control" placeholder="Price" autocomplete="off">
                                 </div>
                                 <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" class="btn btn-light" id="createCancel">Cancel</button>
                             </form>
                         </div>
                     </div>
@@ -83,6 +84,7 @@
                                     <input type="text" name="updatePrice" id="updatePrice" class="form-control"  autocomplete="off">
                                 </div>
                                 <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" class="btn btn-light" id="updateCancel">Cancel</button>
                             </form>
                         </div>
                     </div>

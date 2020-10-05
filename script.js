@@ -121,10 +121,6 @@ $(function () {
                $('#updateModal').modal('hide');
                $("#productsTable").dataTable().fnDestroy()
                loadDataTable();
-               /*$('#' + data.SKU + ' .productName').html(data.name);
-               $('#' + data.SKU + ' .productDesc').html(data.description);
-               $('#' + data.SKU + ' .productQuantity').html(data.quantity);
-               $('#' + data.SKU + ' .productPrice').html(data.price);*/
             } else {
                alert("nope")
             }
@@ -169,6 +165,22 @@ $(function () {
          }).fail(function (data) {
                console.log(data);
          });
+      }); 
+   });
+
+   // hide update product modal on cancel
+   $(function () {    
+      document.getElementById("createCancel").addEventListener('click', function (e) {
+         e.preventDefault();
+         $('#createModal').modal('hide');
+      }); 
+   });
+
+   // hide update product modal on cancel
+   $(function () {    
+      document.getElementById("updateCancel").addEventListener('click', function (e) {
+         e.preventDefault();
+         $('#updateModal').modal('hide');
       }); 
    });
 
